@@ -54,6 +54,8 @@
     Breakpoints();
   </script>
 </head>
+@extends('admin.include.sidebar')
+
 <body class="dashboard">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -328,7 +330,7 @@
               </li>
               <li class="divider" role="presentation"></li>
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+                <a href="/admin/login" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
               </li>
             </ul>
           </li>
@@ -1484,7 +1486,7 @@
       <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
         <span class="icon wb-eye-close" aria-hidden="true"></span>
       </a>
-      <a href="/admin/logout" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+      <a href="/admin/login" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
         <span class="icon wb-power" aria-hidden="true"></span>
       </a>
     </div>
